@@ -6,7 +6,7 @@ int init_module(void)
 {
 	int ret;
 	printk("init_module\n");
-	ret = __gpio_get_value( 170 );
+	ret = gpio_get_value( 170 );
 	printk("ret=%d\n", ret );
 	return 0;
 }

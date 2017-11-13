@@ -1,4 +1,9 @@
-obj-m = module_2.o
+obj-m  = module_2.o
+KERNEL = /root/tegra
+PWD    = $(shell pwd) 
 
 default : 
-	make -C /root/tegra  SUBDIRS=/root/android/my_test/01_day modules
+	$(MAKE) -C $(KERNEL)  SUBDIRS=$(PWD) modules
+
+clean : 
+	$(MAKE) -C $(KERNEL)  SUBDIRS=$(PWD) clean

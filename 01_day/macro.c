@@ -1,6 +1,26 @@
 #if 1
 #include <stdio.h>
 
+void bar(void)
+{
+	printf("bar()\n");
+}
+void foo(void) __attribute__((alias("bar")));
+
+//-------------------------------------------
+
+int main()
+{
+	foo();
+	return 0;
+}
+#endif
+
+
+
+#if 0
+#include <stdio.h>
+
 #define __stringify_1(x...)	#x
 #define __stringify(x...)	__stringify_1(x)
 
