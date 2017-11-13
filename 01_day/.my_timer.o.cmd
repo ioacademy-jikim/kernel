@@ -1,8 +1,8 @@
-cmd_/root/android/my_test/01_day/module_2.o := aarch64-linux-android-gcc -Wp,-MD,/root/android/my_test/01_day/.module_2.o.d  -nostdinc -isystem /root/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9/include -I/root/tegra/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/root/tegra/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/root/tegra/include/uapi -Iinclude/generated/uapi -include /root/tegra/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -fconserve-stack -mgeneral-regs-only -fno-pic -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(module_2)"  -D"KBUILD_MODNAME=KBUILD_STR(module_2)" -c -o /root/android/my_test/01_day/module_2.o /root/android/my_test/01_day/module_2.c
+cmd_/root/android/my_test/01_day/my_timer.o := aarch64-linux-android-gcc -Wp,-MD,/root/android/my_test/01_day/.my_timer.o.d  -nostdinc -isystem /root/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9/include -I/root/tegra/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/root/tegra/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/root/tegra/include/uapi -Iinclude/generated/uapi -include /root/tegra/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -fconserve-stack -mgeneral-regs-only -fno-pic -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(my_timer)"  -D"KBUILD_MODNAME=KBUILD_STR(my_timer)" -c -o /root/android/my_test/01_day/my_timer.o /root/android/my_test/01_day/my_timer.c
 
-source_/root/android/my_test/01_day/module_2.o := /root/android/my_test/01_day/module_2.c
+source_/root/android/my_test/01_day/my_timer.o := /root/android/my_test/01_day/my_timer.c
 
-deps_/root/android/my_test/01_day/module_2.o := \
+deps_/root/android/my_test/01_day/my_timer.o := \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -571,35 +571,7 @@ deps_/root/android/my_test/01_day/module_2.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/gpio.h \
-    $(wildcard include/config/gpiolib.h) \
-    $(wildcard include/config/arch/have/custom/gpio/h.h) \
-  /root/tegra/arch/arm64/include/asm/gpio.h \
-    $(wildcard include/config/arch/nr/gpio.h) \
-    $(wildcard include/config/need/mach/gpio/h.h) \
-  include/asm-generic/gpio.h \
-    $(wildcard include/config/of/gpio.h) \
-    $(wildcard include/config/of.h) \
-    $(wildcard include/config/pinctrl.h) \
-    $(wildcard include/config/gpio/sysfs.h) \
-  include/linux/of.h \
-    $(wildcard include/config/sparc.h) \
-    $(wildcard include/config/of/dynamic.h) \
-    $(wildcard include/config/attach/node.h) \
-    $(wildcard include/config/detach/node.h) \
-    $(wildcard include/config/add/property.h) \
-    $(wildcard include/config/remove/property.h) \
-    $(wildcard include/config/update/property.h) \
-    $(wildcard include/config/proc/devicetree.h) \
-  include/linux/mod_devicetable.h \
-  include/linux/uuid.h \
-  include/uapi/linux/uuid.h \
-  /root/tegra/arch/arm64/include/asm/prom.h \
-  include/linux/pinctrl/pinctrl.h \
-  include/linux/radix-tree.h \
-  include/linux/seq_file.h \
-  include/linux/pinctrl/pinctrl-state.h \
 
-/root/android/my_test/01_day/module_2.o: $(deps_/root/android/my_test/01_day/module_2.o)
+/root/android/my_test/01_day/my_timer.o: $(deps_/root/android/my_test/01_day/my_timer.o)
 
-$(deps_/root/android/my_test/01_day/module_2.o):
+$(deps_/root/android/my_test/01_day/my_timer.o):

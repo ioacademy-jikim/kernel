@@ -1,8 +1,8 @@
-cmd_/root/android/my_test/01_day/module_2.mod.o := aarch64-linux-android-gcc -Wp,-MD,/root/android/my_test/01_day/.module_2.mod.o.d  -nostdinc -isystem /root/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9/include -I/root/tegra/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/root/tegra/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/root/tegra/include/uapi -Iinclude/generated/uapi -include /root/tegra/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -fconserve-stack -mgeneral-regs-only -fno-pic -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(module_2.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(module_2)" -DMODULE  -c -o /root/android/my_test/01_day/module_2.mod.o /root/android/my_test/01_day/module_2.mod.c
+cmd_/root/android/my_test/01_day/my_timer.mod.o := aarch64-linux-android-gcc -Wp,-MD,/root/android/my_test/01_day/.my_timer.mod.o.d  -nostdinc -isystem /root/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9/include -I/root/tegra/arch/arm64/include -Iarch/arm64/include/generated  -Iinclude -I/root/tegra/arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I/root/tegra/include/uapi -Iinclude/generated/uapi -include /root/tegra/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -std=gnu89 -O2 -fconserve-stack -mgeneral-regs-only -fno-pic -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(my_timer.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(my_timer)" -DMODULE  -c -o /root/android/my_test/01_day/my_timer.mod.o /root/android/my_test/01_day/my_timer.mod.c
 
-source_/root/android/my_test/01_day/module_2.mod.o := /root/android/my_test/01_day/module_2.mod.c
+source_/root/android/my_test/01_day/my_timer.mod.o := /root/android/my_test/01_day/my_timer.mod.c
 
-deps_/root/android/my_test/01_day/module_2.mod.o := \
+deps_/root/android/my_test/01_day/my_timer.mod.o := \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
@@ -574,6 +574,6 @@ deps_/root/android/my_test/01_day/module_2.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/root/android/my_test/01_day/module_2.mod.o: $(deps_/root/android/my_test/01_day/module_2.mod.o)
+/root/android/my_test/01_day/my_timer.mod.o: $(deps_/root/android/my_test/01_day/my_timer.mod.o)
 
-$(deps_/root/android/my_test/01_day/module_2.mod.o):
+$(deps_/root/android/my_test/01_day/my_timer.mod.o):

@@ -1,4 +1,4 @@
-obj-m  = module_2.o
+obj-m  = my_timer.o
 KERNEL = /root/tegra
 PWD    = $(shell pwd) 
 
