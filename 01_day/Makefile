@@ -1,4 +1,4 @@
-obj-m  = my_timer.o
+obj-m  = my_interrupt.o
 KERNEL = /root/tegra
 PWD    = $(shell pwd) 
 

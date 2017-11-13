@@ -1,6 +1,25 @@
 #if 1
 #include <stdio.h>
 
+#define __must_check		__attribute__((warn_unused_result))
+
+int __must_check foo(void)
+{
+	printf("foo()\n");
+	return 1;
+}
+
+int main()
+{
+	int ret;
+	ret = foo();
+	return 0;
+}
+#endif
+
+#if 0
+#include <stdio.h>
+
 void bar(void)
 {
 	printf("bar()\n");
